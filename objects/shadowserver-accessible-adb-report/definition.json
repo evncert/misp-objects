@@ -1,0 +1,123 @@
+{
+  "attributes": {
+
+
+	"timestamp": {
+	  "description": "Time that the IP was probed in UTC+0",
+	  "misp-attribute": "datetime",
+	  "ui-priority": 1
+	},
+	
+
+	"ip": {
+	  "description": "The IP address of the device in question",
+	  "misp-attribute": "ip-src",
+	  "ui-priority": 1
+	},
+	
+
+	"protocol": {
+	  "description": "Protocol that the ADB response came on (always TCP)",
+	  "misp-attribute": "text",
+	  "ui-priority": 1
+	},
+	
+
+	"port": {
+	  "description": "Port that the ADB response came from (5555/TCP)",
+	  "misp-attribute": "port",
+	  "ui-priority": 1
+	},
+	
+
+	"hostname": {
+	  "description": "Reverse DNS name of the device in question",
+	  "misp-attribute": "domain",
+	  "ui-priority": 1
+	},
+	
+
+	"tag": {
+	  "description": "This will always be adb",
+	  "misp-attribute": "text",
+	  "ui-priority": 1
+	},
+
+	"asn": {
+	  "description": "ASN of where the device in question resides",
+	  "misp-attribute": "AS",
+	  "ui-priority": 1
+	},
+	
+
+	"geo": {
+	  "description": "Country where the device in question resides",
+	  "misp-attribute": "target-location",
+	  "ui-priority": 1
+	},
+	
+
+	"region": {
+	  "description": "State / Province / Administrative region where the device in question resides",
+	  "misp-attribute": "target-location",
+	  "ui-priority": 1
+	},
+	
+
+	"city": {
+	  "description": "City in which the device in question resides",
+	  "misp-attribute": "target-location",
+	  "ui-priority": 1
+	},
+	
+
+	"naics": {
+	  "description": "North American Industry Classification System Code",
+	  "misp-attribute": "text",
+	  "ui-priority": 1
+	},
+	
+
+	"sic": {
+	  "description": "Standard Industrial Classification System Code",
+	  "misp-attribute": "text",
+	  "ui-priority": 1
+	},
+	
+
+	"name": {
+	  "description": "The device's internal codename as defined by the vendor (usually)",
+	  "misp-attribute": "text",
+	  "ui-priority": 1
+	},
+	
+
+	"model": {
+	  "description": "Marketing name for the device",
+	  "misp-attribute": "text",
+	  "ui-priority": 1
+	},
+	
+
+	"device": {
+	  "description": "Also the device's codename, may be the same as the 'name' field",
+	  "misp-attribute": "text",
+	  "ui-priority": 1
+	},
+	
+
+	"features": {
+	  "description": "Specific bits of the code that the device is advertising",
+	  "misp-attribute": "text",
+	  "ui-priority": 1
+	}
+	
+
+},
+"description": "Shadowserver accessible adb report",
+"meta-category": "network",
+"name": "shadowserver-accessible-adb-report",
+"uuid": "f6122a8b-6841-443d-b7e5-5473b0b3f0f1",
+"version": 1
+}
+

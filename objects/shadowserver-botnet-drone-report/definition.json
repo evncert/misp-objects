@@ -1,0 +1,179 @@
+{
+  "attributes": {
+    "agent": {
+      "description": "HTTP connection agent, if applicable",
+      "misp-attribute": "user-agent",
+      "ui-priority": 1
+    },
+    "application": {
+      "description": "Application name / Layer 7 protocol",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "asn": {
+      "description": "ASN where the drone resides",
+      "misp-attribute": "AS",
+      "ui-priority": 1
+    },
+    "cc_asn": {
+      "description": "ASN of the C&C",
+      "misp-attribute": "AS",
+      "ui-priority": 1
+    },
+    "cc_dns": {
+      "description": "For HTTP traffic, the content of the HTTP Host: header — normally the fully qualified domain name of the C&C",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "cc_geo": {
+      "description": "Country of the C&C",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "cc_ip": {
+      "description": "The Command and Control managing the IP or destination IP that the device in question is observed connecting to",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "cc_naics": {
+      "description": "North American Industry Classification System Code for the C&C IP",
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "cc_port": {
+      "description": "Server-side port that the IP connected to",
+      "misp-attribute": "port",
+      "ui-priority": 1
+    },
+    "cc_sector": {
+      "description": "Sector to which the C&C IP belongs",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "cc_sic": {
+      "description": "Standard Industrial Classification System Code for the C&C IP",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "city": {
+      "description": "City from the Geo",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "count": {
+      "description": "Number of connections from this drone IP",
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "family": {
+      "description": "Malware family, normally the same as infection, if present",
+      "misp-attribute": "malware-type",
+      "ui-priority": 1
+    },
+    "geo": {
+      "description": "Country where the drone resides",
+      "misp-attribute": "target-location",
+      "ui-priority": 1
+    },
+    "hostname": {
+      "description": "Reverse DNS of the IP of the drone",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "id": {
+      "description": "Bot ID",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "infection": {
+      "description": "Infection name, if known",
+      "misp-attribute": "malware-type",
+      "ui-priority": 1
+    },
+    "ip": {
+      "description": "The IP of the device in question",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "machine_name": {
+      "description": "Name of the compromised machine",
+      "misp-attribute": "target-machine",
+      "ui-priority": 1
+    },
+    "naics": {
+      "description": "North American Industry Classification System Code",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "p0f_detail": {
+      "description": "Operating System version",
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "p0f_genre": {
+      "description": "Operating System family",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "port": {
+      "description": "Source port of the IP connection",
+      "misp-attribute": "port",
+      "ui-priority": 1
+    },
+    "proxy": {
+      "description": "If the connection went through a known proxy system",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "public_source": {
+      "description": "Source of the event, if present",
+      "misp-attribute": "test",
+      "ui-priority": 1
+    },
+    "region": {
+      "description": "State or province from the Geo",
+      "misp-attribute": "target-location",
+      "ui-priority": 1
+    },
+    "sector": {
+      "description": "Sector to which the IP in question belongs; e.g. Communications, Commercial Facilities, Information Technology",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sic": {
+      "description": "Standard Industrial Classification System Code",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ssl_cipher": {
+      "description": "SSL Cipher used if connection is done over SSL",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "tag": {
+      "description": "Additional information regarding the event, if present",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "timestamp": {
+      "description": "Timestamp when the IP was seen in UTC+0",
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Packet type of the connection traffic (UDP/TCP)",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Connection URL, if applicable",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    }
+  },
+  "description": "ShadowServer Botnet-Drone Report",
+  "meta-category": "network",
+  "name": "shadowserver-botnet-drone",
+  "uuid": "84692110-d1ec-4e5c-97dd-8ca4128bfad7",
+  "version": 1
+}
